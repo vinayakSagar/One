@@ -1,10 +1,16 @@
 import React from 'react';
 import vg from '../assets/2.webp';
+import {
+  AiFillGoogleCircle,
+  AiFillAmazonCircle,
+  AiFillYoutube,
+  AiFillInstagram,
+} from 'react-icons/ai';
 
 function Home() {
   return (
     <>
-      <div className="home">
+      <div className="home" id='home'>
         <main>
           <h1>TechStar</h1>
           <p>Solution to all your problems.</p>
@@ -18,7 +24,7 @@ function Home() {
             problem solving ability in children.</p>
         </div>
       </div>
-      <div className="home3">
+      <div className="home3" id='about'>
         <div>
           <h1>Who we are?</h1>
           <p>
@@ -37,6 +43,29 @@ function Home() {
             qui fuga quae repellat sunt, non natus, iure ab officia rem ipsa cum
             sed cumque corporis voluptate quibusdam nostrum quod saepe
           </p>
+        </div>
+      </div>
+      <div className="home4" id='brands'>
+        <div>
+          <h1>Brands</h1>
+          <article>
+            <div style={{animationDelay:"0.3s"}}>
+              <AiFillGoogleCircle/>
+              <p>Google</p>
+            </div>
+            <div style={{animationDelay:"0.5s"}}>
+              <AiFillAmazonCircle/>
+              <p>Amezon</p>
+            </div>
+            <div style={{animationDelay:"0.7s"}}>
+              <AiFillYoutube/>
+              <p>Youtube</p>
+            </div>
+            <div style={{animationDelay:"0.1s"}}>
+              <AiFillInstagram/>
+              <p>Instagram</p>
+            </div>
+          </article>
         </div>
       </div>
     </>
