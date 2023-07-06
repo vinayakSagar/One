@@ -9,6 +9,7 @@ import "./styles/header.scss"
 import "./styles/home.scss"
 import "./styles/footer.scss"
 import "./styles/contact.scss"
+import Services from "./components/Services";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/contact" element={<Contact/>} />
+        <Route path="/services" element={<Services/>} />
       </Routes>
       <Footer/>
     </Router>
